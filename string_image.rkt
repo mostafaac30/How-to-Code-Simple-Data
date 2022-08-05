@@ -1,0 +1,23 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname string_image) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+(require 2htdp/image)
+
+(circle 50 "solid" "yellow" )
+(rectangle 50 30 "outline" "red")
+(text "mostafa" 24 "orange")
+
+;(above (circle 50 "solid" "yellow" )
+;       (circle 50 "solid" "yellow" ))
+
+(define SIZE 50 )
+
+(define (printCircle color)
+  (circle SIZE "solid" color ))
+
+(above (printCircle "red")
+       (printCircle "orange"))
+
+
+
+
