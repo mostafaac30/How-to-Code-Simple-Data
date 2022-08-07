@@ -16,3 +16,6 @@
 (> (image-width l1) (image-height l2))
 "wide"
 "tall")
+
+(and
+(> (image-width l1) (image-width l2)) (< (image-height l1) (image-height l2)))
